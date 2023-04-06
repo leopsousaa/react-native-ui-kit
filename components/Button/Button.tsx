@@ -1,15 +1,15 @@
 import React from "react";
-import { Button as ButtonBase } from "react-native";
 
 import { styled } from "nativewind";
+import { Text, TouchableOpacity } from "react-native";
 import { ButtonProps } from "./Button.types";
 
-const ButtonWind = styled(ButtonBase);
+const ButtonWind = styled(TouchableOpacity);
 
 export const Button = ({ title, variant, ...props }: ButtonProps) => {
   return (
     <ButtonWind
-      className="text-black"
+      className="text-black bg-red-500 "
       // className={clsx({
       //   "text-black": variant === "default",
       //   "text-red-500": variant === "danger",
@@ -19,7 +19,8 @@ export const Button = ({ title, variant, ...props }: ButtonProps) => {
       //   "text-blue-500": variant === "primary",
       // })}
       {...props}
-      title={title}
-    />
+    >
+      <Text>{title}</Text>
+    </ButtonWind>
   );
 };
