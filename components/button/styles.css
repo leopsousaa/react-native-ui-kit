@@ -1,0 +1,6 @@
+.button {
+  @apply flex 
+  items-center 
+  p-6 
+  bg-white;
+}
