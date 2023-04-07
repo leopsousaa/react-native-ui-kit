@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react-native";
-import { Button } from "./Button";
+import { Button } from "./index";
 
 export default {
   title: "Button",
